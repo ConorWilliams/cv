@@ -26,14 +26,13 @@
 
 \thispagestyle{empty}
 
-\renewcommand{\arraystretch}{1.7} %more space between table rows
+\renewcommand{\arraystretch}{1.5} %more space between table rows
 
 \section*{Education} \label{sec:intro}
 
 \begin{tabular}{@{}lp{0.84\textwidth}@{}}
     \textbf{2020--today}: & \textbf{PhD Computational Methods, University of Cambridge.}
 
-    
     \vspace{0.5em}
     
     Supervised by Professor James Elliott – due for submission in summer 2024.
@@ -44,11 +43,11 @@
     
     \vspace{0.5em}
     
-    My specialisations are: molecular modelling, numerical methods, massively parallel processing and invariant representation theory.
+    My specialisations are: molecular modelling, numerical methods, massively parallel processing, GPGPU computing and invariant representation theory.
     
     \vspace{0.5em}
     
-    Reviewed after first-year probationary period as ``\textbf{a very impressive candidate} [who] is well placed to make an impact in the field''.    \\
+    Reviewed after first-year probationary period as ``\textbf{a very impressive candidate} [who] is well placed to make an impact in the field''.      \\
     
     \textbf{2019--2020}:  & \textbf{MPhil, Distinction (\num{83}\% average)}, Scientific Computing, University of Cambridge.
     
@@ -58,15 +57,19 @@
     
     \vspace{0.5em}
     
-    \textbf{Distinction-awarded dissertation} titled: Off-lattice kinetic Monte Carlo modelling and numerical methods.                                \\
+    \textbf{Distinction-awarded dissertation} titled: Off-lattice kinetic Monte Carlo modelling and numerical methods.                                  \\
     
-    \textbf{2016--2019}:  & \textbf{BA (Hons), 1\textsuperscript{st} class in all years}, Natural Sciences Tripos (Physics), University of Cambridge. \\
+    \textbf{2016--2019}:  & \textbf{BA (Hons), 1\textsuperscript{st} class (in all years)}, Natural Sciences Tripos (Physics), University of Cambridge. \\
     
-    \textbf{2014--2016}:  & \textbf{A-levels, straight A* grades}, in Mathematics, Physics, Chemistry and Biology, Colchester Royal Grammar School.   \\
+    \textbf{2014--2016}:  & \textbf{A-levels, straight A* grades}, in Mathematics, Physics, Chemistry and Biology, Colchester Royal Grammar School.     \\
     
-    \textbf{2009--2014}:  & \textbf{GCSEs, eight A* grades}, Tendring Technology College.
+    \textbf{2009--2014}:  & \textbf{GCSEs, 8 A* grades}, Tendring Technology College.
     
 \end{tabular}
+
+\section*{Industry}
+
+\paragraph*{Summer 2023} Machine learning intern at \textbf{Myrtle.ai}. I developed a custom LSTM module in CUDA to replace a pytorch implementation. This formed a key component of their FPGA automatic speech recognition pipeline. I \textbf{delivered a solution that was $7.7\times$ faster} than their previous implementation and throughput competitive with NVIDIA's hand-tuned CuDNN library. Furthermore, during my time there I identified several stages in the memory constraining section of the model training pipeline that could be optimized; ultimately I increased the training batch size by $85\%$ which reduced training times/costs by a similar fraction. Finally, I implemented the transducer Multi-blank extension and trained a model with competitive word-error-rates whilst \textbf{halving inference-time latency}. 
 
 \section*{Publications}
 
@@ -76,17 +79,18 @@ simulations to predict hydrogen vacancy-cluster interactions in $\alpha$-Fe, Act
 
 \section*{Conferences}
 
-Selected to \textbf{present at TMS2023} \emph{Symposium of Computational Thermodynamics and Kinetics}. TMS is one of the largest and most prestigious materials-science conferences worldwide.
+\textbf{TMS2023} \emph{Symposium of Computational Thermodynamics and Kinetics}, presented on advanced materials simulation at one of the largest and most prestigious materials-science conferences worldwide.
 
-\pagebreak
+% \pagebreak
 
-\section*{Employment}
 
-\paragraph*{2022--today} \textbf{Masters dissertation supervisor}. In this role I am guiding a student on their first novel-research: \emph{modelling vacancy-cluster stability}. This involves bi-weekly meetings, reviewing their work and steering them towards a publication-quality dissertation. 
+\section*{Other employment}
 
-\paragraph*{2020--today}
+\paragraph*{2022--2023} \textbf{Masters dissertation supervisor}. In this role I guided a student on their first novel-research: \emph{modelling vacancy-cluster stability}. This involved bi-weekly meetings, reviewing their work and steering them towards a publication-quality dissertation. They achieved the \textbf{highest-grade in their cohort} and won the departmental prize for this work.
 
-I am entering my third year as an \textbf{undergraduate mathematics supervisor} at the University of Cambridge. This requires me to set, mark and teach eight students every week. This year one of my students ranked $2\textsuperscript{nd}$ across all the Cambridge colleges. Feedback has included: ``[Conor] pushed me to see the deep-connections between the topics we studied and always had the most (frustratingly!) elegant solutions''. 
+\paragraph*{2020--2023}
+
+I have taught for three year as an \textbf{undergraduate mathematics supervisor} at the University of Cambridge. This requires me to set, mark and teach eight students every week. This year one of my students ranked $2\textsuperscript{nd}$ across all the Cambridge colleges. Feedback has included: ``[Conor] pushed me to see the deep-connections between the topics we studied and always had the most (frustratingly!) elegant solutions''. 
 
 \paragraph*{2020-2021} While holding a senior role on the Churchill College MCR as the Bar Secretary I: transformed the bar's stock list; negotiated extended opening hours and recruited and trained one of the largest cohorts of staff in recent years. I was required to plan-ahead, work diplomatically and assertively with the MCR team and communicating with Senior College leadership.
 
@@ -94,27 +98,29 @@ I am entering my third year as an \textbf{undergraduate mathematics supervisor} 
 
 \paragraph*{2022--today} I am currently undertaking the open-sourcing and documentation of my PhD codebase, the first open off-lattice kinetic Monte Carlo framework. 
 
-\paragraph*{2021} Developed and maintained C++ implementations of concurrent data-structures and a lock-free continuation-stealing scheduler as part of my journey to understand parallel/asynchronous programming and memory models.
+\paragraph*{2021--today} Developed and maintain C++ implementations of concurrent data-structures and a lock-free \textbf{continuation-stealing scheduler} (utilizing C++20's coroutines) as part of my journey to understand parallel/asynchronous programming and memory models.
 
-\paragraph*{2021} As the MCR Computing Officer I designed and maintained a digital room-ballot system for the College, attempting to solve the \emph{assignment problem}.
+\paragraph*{2021} As the MCR Computing Officer I designed and maintained a digital room-ballot system for the College, attempting to solve \emph{the assignment problem}.
 
 \paragraph*{2018} Developed an optimisation algorithm in Python for eWATERservices to position water taps in African villages, which formed part of their successful World Bank investment bid. 
 
 \section*{Technical skills}
 \begin{itemize}[leftmargin=*]
     \setlength{\itemsep}{0pt}
-    \item \textbf{Coding:} C++ (advanced); Python \&  Git (intermediate); MATLAB$\text{\textregistered}$ \& CUDA (basic).
+    \item \textbf{Coding:} C++ (expert/advanced); CUDA, Python \&  Git (intermediate); MATLAB$\text{\textregistered}$ (basic).
     \item \textbf{Operating systems:} Linux, Windows.
-    \item \textbf{Software/Libraries:} \LaTeX, Eigen, Sphinx, Doxygen, Microsoft Office.
-    \item \textbf{Presentations:} I regularly give engaging and informative talks to my non-expert industrial sponsors. Alongside, clear and precise technical-presentations to my research group and department.
+    \item \textbf{Software/Libraries:} \LaTeX, Pytorch, Eigen, Sphinx, Doxygen, Microsoft Office.
+    \item \textbf{Presentations:} I regularly give engaging and informative talks to my non-expert industrial sponsors. Alongside, \textbf{clear and precise technical-presentations} to my research group and department.
           
 \end{itemize}
+
+\pagebreak
 
 \section*{Interests}
 
 \begin{itemize}[leftmargin=*]
     \setlength{\itemsep}{0pt}
-    \item I am an avid ultralight-backpacker - completing multiple forty-day plus expeditions, carrying the minimum amount of equipment. These require extended planning and high self-motivation.
+    \item I am an avid ultralight-backpacker - completing multiple $40+$ day expeditions, carrying the minimum amount of equipment. These require extended planning and high self-motivation.
           
     \item I have rowed competitively for my college for four years, training as much as five times a week. This demonstrates my commitment and time management.
           
